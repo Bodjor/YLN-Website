@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>YLN</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="/Images/YLN-Logo-1-1.png" alt="" />
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-item dropdown">
+            <a href="/index.html" class="nav-link"> HOME </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link">
+              WHO WE ARE <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/About_Page/aboutus.html">ABOUT</a></li>
+              <li><a href="/About_Page/boardmembers.html">BOARD MEMBERS</a></li>
+              <li><a href="/About_Page/teammembers.html">TEAM MEMBERS</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link">
+              OUR WORK <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/Our_Work/active.html">ACTIVE CITIZENSHIP</a></li>
+              <li>
+                <a href="/Our_Work/inclusive.html">INCLUSIVE EDUCATION</a>
+              </li>
+              <li><a href="/Our_Work/youth.html">YOUTH LEADERSHIP</a></li>
+              <li><a href="/Our_Work/climate.html">CLIMATE IMPACT</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link">
+              RESOURCES <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="/Resources_Page/annualreports.html">ANNUAL REPORTS</a>
+              </li>
+              <li>
+                <a href="/Resources_Page/strategicplan.html">STRATEGIC PLAN</a>
+              </li>
+              <li>
+                <a href="/Resources_Page/policybriefs.html">POLICY BRIEFS</a>
+              </li>
+              <li>
+                <a href="/Resources_Page/programsandimpactreports.html"
+                  >PROGRAMS and IMPACT REPORTS</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="stories.html">OUR STORIES</a></li>
+          <li><a href="/joinus.html" class="join-us">Join Us</a></li>
+          <li><a href="donate.html" class="donate-btn">DONATE</a></li>
+        </ul>
+
+        <div class="nav-btn-container">
+          <a href="/joinus.html" class="nav-btn-joinus">Join Us</a>
+
+          <a href="/donate.html" class="nav-btn">DONATE</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-who-we-are">
+      <div class="hero-backgrounds">
+        <div class="slide bg1"></div>
+        <div class="slide bg2"></div>
+        <div class="slide bg3"></div>
+        <div class="slide bg4"></div>
+        <div class="slide bg5"></div>
+      </div>
+
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1 data-aos="zoom-in">Raising Leaders, Transforming Nations</h1>
+          <p data-aos="zoom-in">
+            At YLN, we are dedicated to inspiring and empowering young leaders
+            across Africa. Join us in transforming communities and creating
+            lasting change
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="about">
+      <div class="about-content">
+        <h2>Who We Are</h2>
+        <p>
+          <strong>Young Leaders Network</strong> (registered with CAC as
+          Initiative for Leadership Development and Youth Empowerment) is a
+          youth-led, youth-focused nonprofit organization established in 2018.
+        </p>
+        <p>
+          We believe youth are the cornerstone of meaningful and sustainable
+          development in society and play a vital role in spreading development,
+          fostering, and transferring knowledge across generations.
+        </p>
+
+        <div class="about-buttons">
+          <a href="about.html" class="btn">Learn More</a>
+          <a href="joinus.html" class="btn-outline">Join Us</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="stats">
+      <h2>Our Impact</h2>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <h3 class="counter" data-target="200000">0</h3>
+          <p>Youths Reached</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-globe-africa"></i></div>
+          <h3 class="counter" data-target="200">0</h3>
+          <p>Communities Engaged</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3 class="counter" data-target="90">0</h3>
+          <p>Teachers Trained</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-school"></i></div>
+          <h3 class="counter" data-target="20">0</h3>
+          <p>Schools Engaged</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-book-open-reader"></i></div>
+          <h3 class="counter" data-target="3500">0</h3>
+          <p>Out-of-School Children</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2>Our Initiatives</h2>
+
+      <div class="featured-grid">
+        <a
+          href="ignite-talk.html"
+          class="featured-card featured-card-one"
+          data-aos="fade-up"
+        >
+          <div class="image-wrapper">
+            <img
+              src="/Images/Website images and resource 2025/Ilead School of Leadership/DSC_0316_2.JPG"
+              alt="Ignite Talk"
+            />
+            <div class="image-overlay"></div>
+          </div>
+
+          <div class="card-content">
+            <h3>ILEAD School of Leadership and Civic Engagement</h3>
+            <p>Empowering Young Leaders, Transforming Communities</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a href="yldp.html" class="featured-card" data-aos="fade-up">
+          <div class="image-wrapper">
+            <img
+              src="/Images/Website images and resource 2025/YLDP/475796010_1034087382083633_6963225385315587401_n.jpg"
+              alt="YLDP"
+            />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Young Leaders Development Program</h3>
+            <p>Empowering Future Leaders for Leadership and Impact</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a href="pad-bank.html" class="featured-card" data-aos="fade-up">
+          
+          <div class="image-wrapper">
+            <img
+            src="/Images/Website images and resource 2025/Ignite Talk/IMG_1884.jpg"
+            alt="Pad Bank"
+          />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Ignite Talk</h3>
+            <p>Fueling Ideas, Driving Change</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a
+          href="ilead.html"
+          class="featured-card featured-card-four"
+          data-aos="fade-up"
+        >
+          
+          <div class="image-wrapper">
+            <img
+            src="/Images/Website images and resource 2025/Ignite Sports/428644894_792990576193316_5195132447324110373_n.jpg"
+            alt="ILEAD"
+          />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Ignite Sports</h3>
+            <p>Energizing Youths through Physical and Mental Fitness</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a
+          href="ilead.html"
+          class="featured-card featured-card-four"
+          data-aos="fade-up"
+        >
+          
+          <div class="image-wrapper">
+            <img
+            src="/Images/Website images and resource 2025/Citizens Accountability Training/483942113_1064734905685547_4360310826391360375_n.jpg"
+            alt="ILEAD"
+          />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Citizens Accountability Training</h3>
+            <p>Empowering Youths, Strengthening Democracy</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a
+          href="ilead.html"
+          class="featured-card featured-card-four"
+          data-aos="fade-up"
+        >
+          
+          <div class="image-wrapper">
+            <img
+            src="/Images/Website images and resource 2025/Teachers Training/WhatsApp Image 2025-07-01 at 12.58.35 PM.jpeg"
+            alt="ILEAD"
+          />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Citizens – Legislators Forum</h3>
+            <p>Strengthening Dialogue through Inclusive Legislation</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a
+          href="ilead.html"
+          class="featured-card featured-card-four"
+          data-aos="fade-up"
+        >
+          <div class="image-wrapper">
+            <img
+              src="/Images/Website images and resource 2025/Interparty Youth/WhatsApp Image 2025-01-31 at 11.15.06 PM.jpeg"
+              alt="ILEAD"
+            />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Inter-Party Youth, Women and Civil Society Forums</h3>
+            <p>Bridging Divides, Strengthening Participation</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+
+        <a
+          href="ilead.html"
+          class="featured-card featured-card-four"
+          data-aos="fade-up"
+        >
+          <div class="image-wrapper">
+            <img
+              src="/Images/Website images and resource 2025/Story Telling Clubs/IMG_9752.JPG"
+              alt="ILEAD"
+            />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Story-Telling Clubs</h3>
+            <p>Empowering Girls through Inspiring Stories</p>
+            <span class="read-more">Read More →</span>
+          </div>
+        </a>
+      </div>
+      <!-- <div style="text-align: center">
+        <a href="/work.html" class="learn-link">Learn more</a>
+      </div> -->
+    </section>
+
+    <!-- <section class="cta">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2>Get Involved and Make a Difference</h2>
+          <p>
+            Join us in empowering youth and transforming communities through
+            your support and involvement. Whether you give your time, resources,
+            or skills, you’re helping raise the next generation of African
+            leaders.
+          </p>
+          <div class="cta-buttons">
+            <a href="donate.html" class="btn">Donate</a>
+            <a href="joinus.html" class="btn-outline">Volunteer</a>
+          </div>
+        </div>
+
+        <div class="cta-image">
+          <img
+            src="/Images/Otherimages/Copyof311989245_5493372600775436_6029576940610736973_n.jpg"
+            alt="Join Us"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>What People Are Saying</h2>
+        <p class="testimonial-intro">
+          Hear from the voices of those impacted by Young Leaders Network.
+        </p>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card" data-aos="zoom-in-up">
+            <p class="testimonial-quote">
+              “YLN gave me the confidence to lead a community initiative and
+              make real change.”
+            </p>
+            <div class="testimonial-meta">
+              <img src="/Images/TeamMembers/DinahDabo.jpg" alt="Amaka" />
+              <div>
+                <strong>Amaka E.</strong><br />
+                Youth Beneficiary
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="zoom-in-up">
+            <p class="testimonial-quote">
+              “Their mentorship and training transformed how I teach and engage
+              my students.”
+            </p>
+            <div class="testimonial-meta">
+              <img src="/Images/TeamMembers/JohnOgah.jpg" alt="Mr. John" />
+              <div>
+                <strong>Mr. John A.</strong><br />
+                Trained Teacher
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="zoom-in-up">
+            <p class="testimonial-quote">
+              “Partnering with YLN has been one of the most impactful
+              investments we’ve made in youth development.”
+            </p>
+            <div class="testimonial-meta">
+              <img
+                src="/Images/TeamMembers/DorothyJamesGwary.JPG"
+                alt="Ngozi"
+              />
+              <div>
+                <strong>Ngozi I.</strong><br />
+                NGO Partner
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="cta-section with-bg">
+      <div class="cta-overlay">
+        <div class="cta-container">
+          <h2>Join the Movement Today</h2>
+          <p>
+            Discover how YLN is making a difference in communities across Africa
+            and beyond.
+          </p>
+          <div class="cta-buttons">
+            <a href="work.html" class="btn">Explore</a>
+            <a href="joinus.html" class="btn-outline">Get Involved</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="hero-who-we-are-2">
+      <div class="hero-backgrounds">
+        <div class="slide bg11"></div>
+        <div class="slide bg22"></div>
+        <div class="slide bg33"></div>
+        <div class="slide bg44"></div>
+        <div class="slide bg55"></div>
+      </div>
+
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <!-- <h1 data-aos="zoom-in">Raising Leaders, Transforming Nations</h1>
+          <p data-aos="zoom-in">
+            At YLN, we are dedicated to inspiring and empowering young leaders
+            across Africa. Join us in transforming communities and creating
+            lasting change
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h2>Our Partners</h2>
+        <p class="partners-subtitle">
+          We collaborate with leading organizations committed to youth
+          development, education, and social impact.
+        </p>
+
+        <div class="partners-logos">
+          <a
+            href="https://dexcentre.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img src="/Images/Partners_ logos/DEC logo.jpg" alt="DEC" />
+          </a>
+          <a
+            href="https://www.malala.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/Images/Partners_ logos/Malala Fund logo.png"
+              alt="Malala Fund"
+            />
+          </a>
+          <a
+            href="https://plan-international.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/Images/Partners_ logos/Plan logo.png"
+              alt="Plan International"
+            />
+          </a>
+          <a
+            href="https://leapafrica.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/Images/Partners_ logos/LEAP-Africa-Official-Logo-1.png"
+              alt="LEAP Africa"
+            />
+          </a>
+          <a
+            href="https://www.sfcg.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/Images/Partners_ logos/search logo.png"
+              alt="Search for Common Ground"
+            />
+          </a>
+          <a
+            href="https://www.jobberman.com/job-seeker/entrepreneurship?utm_source=google&utm_medium=cpc&utm_campaign=entrepreneurship-course&campaignid=21388040139&adgroupid=&adid=&gad_source=1&gad_campaignid=21394396460&gbraid=0AAAAADmiEX2k8by7MxQ_iaYX3xV0x3_xP&gclid=Cj0KCQjw_8rBBhCFARIsAJrc9yCDc_QQEtN_TA2_5dBSc5F-GrwJqi18bw4xeO4kveHvHvw_6hYkno4aApIUEALw_wcB"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img
+              src="/Images/Partners_ logos/Jobberman logo.png"
+              alt="Jobberman"
+            />
+          </a>
+          <a
+            href="https://wanep.org/wanep/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img src="/Images/Partners_ logos/WANEP.png" alt="WANEP" />
+          </a>
+          <a
+            href="https://www.ned.org/apply-for-grant/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="zoom-in"
+          >
+            <img src="/Images/Partners_ logos/NED logo.png" alt="NED" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-left">
+          <h2>Stay Updated with YLN</h2>
+        </div>
+
+        <div class="newsletter-right">
+          <p class="newsletter-subtext">
+            Subscribe to our newsletter and get the latest updates on how we're
+            empowering youth and transforming communities.
+          </p>
+
+          <form class="newsletter-form" action="#" method="POST">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <p class="newsletter-disclaimer">
+            By clicking Subscribe, you agree to receive emails from YLN.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- About / Logo -->
+        <div class="footer-about">
+          <!-- <img src="/Images/YLN-Logo-1-1.png" alt="Young Leaders Network Logo" /> -->
+
+          <h3>YLN</h3>
+          <p>
+            Young Leaders Network is a youth-led nonprofit empowering Africa’s
+            next generation through leadership, education, and community impact.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            Email:
+            <a href="mailto:info@youngleadersnet.org">
+              info@youngleadersnet.org, ylnnigeria@gmail.com</a
+            >
+          </p>
+          <p>Phone: +234 913 508 8745</p>
+          <p>
+            Head Office:
+            <span class="footer-address"
+              >Ambassador Crescent, Western Ring Road, New GRA, Bauchi, Bauchi
+              State.</span
+            >
+          </p>
+          <p>
+            Nasarawa Branch Office:
+            <span class="footer-address"
+              >YMCA Mada-hills Adjacent Lafia Township stadium, Lafia, Nasarawa
+              State</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Social Media + Copyright -->
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <a
+            href="http://facebook.com/youngleadersn"
+            aria-label="Facebook"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="http://x.com/YoungLeadersN"
+            aria-label="Twitter"
+            target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="http://instagram.com/youngleadersn"
+            aria-label="Instagram"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/young-leaders-network"
+            aria-label="LinkedIn"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="http://www.youtube.com/@youngleadersn"
+            aria-label="YouTube"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <p>&copy; 2025 Young Leaders Network. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

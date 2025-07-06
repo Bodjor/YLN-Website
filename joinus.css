@@ -1,0 +1,538 @@
+
+h1 {
+  font-family: "montserrat";
+}
+
+h2 {
+  font-family: "montserrat";
+}
+
+h3 {
+  font-family: "montserrat";
+}
+
+h4 {
+  font-family: "montserrat";
+}
+
+p {
+  font-family: "inter";
+}
+
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  /* max-width: 1200px; */
+  /* margin: auto; */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.donate-btn {
+  display: none;
+}
+
+.join-us {
+  display: none;
+}
+
+.nav-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  max-width: 150px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: #00b5e2;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-btn:hover {
+  background-color: #00b5e294;
+  /* box-shadow: inset 0 0 0 2px #e00a0a; */
+}
+
+.nav-btn-joinus {
+  background: none;
+  border: none;
+}
+
+.nav-btn-joinus {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "inter";
+  color: #009fc9;
+}
+
+.nav-btn-joinus:hover {
+  color: #10c5f7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* important for desktop layout */
+  gap: 1.5rem;
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav-links li {
+  margin: 0%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-family: "inter";
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00b5e2;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: #333;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animate to "X" */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex; /* FIX: this makes the icon show on mobile */
+  }
+
+  .donate-btn {
+    display: flex;
+  }
+
+  .join-us {
+    display: flex;
+  }
+
+  .nav-btn-container {
+    display: none;
+  }
+
+  .nav-btn-joinus {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
+
+/* Dropdown styles */
+.nav-item {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 999;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.dropdown-menu li {
+  list-style-type: none;
+}
+
+.dropdown-menu li a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  font-family: "inter";
+  transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+  color: #00b5e2;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Font Awesome dropdown icon */
+.dropdown-icon {
+  margin-left: 5px;
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .nav-item {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: #fff;
+    display: none;
+  }
+
+  .nav-item.show-dropdown .dropdown-menu {
+    display: flex;
+  }
+}
+
+:root {
+  --primary: #00b5e2;
+  --deep-purple: #5e2b4b;
+  --light-bg: #f9f9fb;
+  --card-bg: #fff;
+  --text: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--deep-purple);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+  margin: 0.5rem auto 2rem auto;
+  border-radius: 2px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+  max-width: 700px;
+}
+
+.card:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+}
+
+.section-icon {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.section-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  color: var(--deep-purple);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card p,
+.card ul {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background-color: #009ac5;
+}
+
+.thanks-note {
+  text-align: center;
+  color: var(--deep-purple);
+  font-style: italic;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+/* SECTION 7: Footer Section  */
+
+.site-footer {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 3rem 1.5rem 2rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about h3 {
+  font-size: 1.5rem;
+  font-family: "montserrat";
+  color: #00b5e2;
+  margin-bottom: 0.5rem;
+}
+
+.footer-about p {
+  font-family: "inter";
+}
+
+.footer-links h4,
+.footer-newsletter h4 {
+  font-size: 1.1rem;
+  font-family: "montserrat";
+  margin-bottom: 0.75rem;
+  color: #00b5e2;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-family: "inter";
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-newsletter h4 {
+  font-family: "montserrat";
+}
+
+.footer-newsletter p {
+  margin-bottom: 0.75rem;
+  color: #ccc;
+  font-family: "inter";
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "inter";
+}
+
+.newsletter-form button {
+  background-color: #00b5e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  font-family: "inter";
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #009ac5;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+  font-family: "inter";
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00b5e2;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-newsletter {
+    flex: 1;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .newsletter-form input {
+    flex: 1;
+  }
+
+  .newsletter-form button {
+    width: auto;
+  }
+}

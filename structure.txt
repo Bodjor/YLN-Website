@@ -1,0 +1,198 @@
+For the homepage of the YLN website, the sections in order will likely be:
+
+✅ Navigation (Done)
+
+🟣 Hero Section (Tagline + CTA)
+
+🟡 Impact Stats (simple stacked layout)
+
+🔵 Featured Initiatives (vertical cards)
+
+🟠 Partners
+
+🟢 CTA Section (Join Us / Donate)
+
+⚫ Footer
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us | YLN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #00B5E2;
+      --deep-purple: #5E2B4B;
+      --light-bg: #f9f9fb;
+      --card-bg: #fff;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--deep-purple);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background-color: var(--primary);
+      margin: 0.5rem auto 2rem auto;
+      border-radius: 2px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+    }
+
+    .section-icon {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      color: var(--deep-purple);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .card p,
+    .card ul {
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+      font-size: 1.05rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      justify-content: center;
+    }
+
+    .btn-primary:hover {
+      background-color: #009ac5;
+    }
+
+    .thanks-note {
+      text-align: center;
+      color: var(--deep-purple);
+      font-style: italic;
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .btn-primary {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Page Header -->
+    <h1 class="section-title">Join the Movement</h1>
+    <div class="section-divider"></div>
+
+    <!-- Volunteer -->
+    <div class="card" id="volunteer">
+      <div class="section-icon"><i class="fas fa-hands-helping"></i></div>
+      <img src="/images/volunteer.jpg" alt="Volunteer" class="section-img">
+      <h2>Volunteer With Us</h2>
+      <p>Join our mission to empower youth and transform communities by offering your skills and time. Whether you're a professional, student, or creative — your contribution matters.</p>
+      <a href="https://forms.gle/YOUR_VOLUNTEER_FORM" target="_blank" class="btn-primary">
+        <i class="fas fa-hands-helping"></i> Volunteer Now
+      </a>
+    </div>
+
+    <!-- Partner -->
+    <div class="card" id="partner">
+      <div class="section-icon"><i class="fas fa-handshake"></i></div>
+      <img src="/images/partner.jpg" alt="Partner With Us" class="section-img">
+      <h2>Partner With Us</h2>
+      <p>Let’s collaborate! If you’re an organization, foundation, or corporate body passionate about youth and community development, we’d love to work with you.</p>
+      <a href="https://forms.gle/YOUR_PARTNER_FORM" target="_blank" class="btn-primary">
+        <i class="fas fa-handshake"></i> Become a Partner
+      </a>
+    </div>
+
+    <!-- Donate -->
+    <div class="card" id="donate">
+      <div class="section-icon"><i class="fas fa-donate"></i></div>
+      <img src="/images/donate.jpg" alt="Donate" class="section-img">
+      <h2>Support Our Work</h2>
+      <p>Your donation directly supports programs that uplift young lives. Every contribution creates impact:</p>
+      <ul>
+        <li>🎓 ₦5,000 – Support a Child’s Education</li>
+        <li>🩸 ₦1,000 – Pad a Girl</li>
+        <li>🌱 ₦2,000 – Plant a Tree</li>
+      </ul>
+      <a href="https://forms.gle/YOUR_DONATION_FORM" target="_blank" class="btn-primary">
+        <i class="fas fa-donate"></i> Donate Now
+      </a>
+    </div>
+
+    <!-- Optional Thank You -->
+    <p class="thanks-note">Already submitted a form? Thank you for joining the movement 💜</p>
+  </div>
+
+</body>
+</html>
