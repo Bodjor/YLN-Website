@@ -295,9 +295,9 @@ header {
   border-radius: 4px;
 }
 
-.wwd-row.reverse {
+/* .wwd-row.reverse {
   flex-direction: column-reverse;
-}
+} */
 
 .wwd-text h3 {
   color: #00b5e2;
