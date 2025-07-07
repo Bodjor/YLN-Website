@@ -38,9 +38,27 @@ counters.forEach((counter) => {
 
 // DROP DOWN CLICKABLE FOR MOBILE
 
+// document.querySelectorAll(".dropdown > .nav-link").forEach((link) => {
+//   link.addEventListener("click", function (e) {
+//     if (window.innerWidth <= 768) {
+//       e.preventDefault();
+
+//       // Close all open dropdowns
+//       document.querySelectorAll(".dropdown").forEach((item) => {
+//         if (item !== this.parentElement) {
+//           item.classList.remove("show-dropdown");
+//         }
+//       });
+
+//       // Toggle clicked dropdown
+//       this.parentElement.classList.toggle("show-dropdown");
+//     }
+//   });
+// });
+
 document.querySelectorAll(".dropdown > .nav-link").forEach((link) => {
   link.addEventListener("click", function (e) {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768 && !link.getAttribute("href")) {
       e.preventDefault();
 
       // Close all open dropdowns
@@ -55,6 +73,7 @@ document.querySelectorAll(".dropdown > .nav-link").forEach((link) => {
     }
   });
 });
+
 
 /* curator-feed-default-feed-layout */
 // (function () {
