@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="donate.css" />
   </head>
   <body>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
     <header>
       <nav class="navbar">
         <img src="/Images/YLN-Logo-1-1.png" alt="" />
@@ -115,11 +116,11 @@
               Provide school fees, supplies, and support a child’s learning
               journey.
             </p>
-            <div class="progress-bar">
+            <!-- <div class="progress-bar">
               <div class="progress" style="width: 65%">65%</div>
-            </div>
+            </div> -->
             <a
-              href="https://forms.gle/YOUR_DONATE_FORM"
+              href="https://flutterwave.com/donate/dkzh7ero6mnj"
               target="_blank"
               class="btn-donate"
             >
@@ -139,11 +140,11 @@
             <!-- <div class="icon-box"><i class="fas fa-female"></i></div> -->
             <h2>Pad a Girl – ₦1,000</h2>
             <p>Support menstrual hygiene kits for girls in schools.</p>
-            <div class="progress-bar">
+            <!-- <div class="progress-bar">
               <div class="progress" style="width: 80%">80%</div>
-            </div>
+            </div> -->
             <a
-              href="https://forms.gle/YOUR_DONATE_FORM"
+              href="https://flutterwave.com/donate/9v2qclmdrwfk"
               target="_blank"
               class="btn-donate"
             >
@@ -166,11 +167,11 @@
               Contribute to youth-led environmental actions through tree
               planting.
             </p>
-            <div class="progress-bar">
+            <!-- <div class="progress-bar">
               <div class="progress" style="width: 45%">45%</div>
-            </div>
+            </div> -->
             <a
-              href="https://forms.gle/YOUR_DONATE_FORM"
+              href="https://flutterwave.com/donate/dutz7duzok9c"
               target="_blank"
               class="btn-donate"
             >
@@ -255,6 +256,33 @@
         <p>&copy; 2025 Young Leaders Network. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      function makePayment(amount, title) {
+        FlutterwaveCheckout({
+          public_key: "FLWPUBK_TEST-abd39f71197dbab11ce2e23230ab8e18-X",
+          tx_ref: "txn-" + Date.now(),
+          amount: amount,
+          currency: "NGN",
+          payment_options: "card, mobilemoneyghana, ussd",
+          redirect_url: "https://sandbox.flutterwave.com/donate/uwzuvlraqeza",
+          meta: {
+            consumer_id: 23,
+            consumer_mac: "92a3-912ba-1192a",
+          },
+          customer: {
+            email: "donor@example.com", // replace dynamically or with a form
+            phone_number: "08100000000",
+            name: "Anonymous Donor",
+          },
+          customizations: {
+            title: title,
+            description: "Donate for a cause",
+            logo: "https://www.logolynx.com/images/logolynx/22/2239ca38f5505fbfce7e55bbc0604386.jpeg",
+          },
+        });
+      }
+    </script>
 
     <script src="/index.js"></script>
   </body>
