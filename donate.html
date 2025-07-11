@@ -15,6 +15,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="donate.css" />
+    
+    <!-- MailerLite Universal -->
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        (w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          }),
+          (l = d.createElement(e)),
+          (l.async = 1),
+          (l.src = u),
+          (n = d.getElementsByTagName(e)[0]),
+          n.parentNode.insertBefore(l, n);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.mailerlite.com/js/universal.js",
+        "ml"
+      );
+      ml("account", "1656807");
+    </script>
+    <!-- End MailerLite Universal -->
   </head>
   <body>
     <script src="https://checkout.flutterwave.com/v3.js"></script>
@@ -211,11 +235,13 @@
         <!-- Column 3: Newsletter -->
         <div class="footer-newsletter">
           <h4>Subscribe</h4>
-          <p>Get our latest updates, opportunities, and impact stories.</p>
+          <!-- <p>Get our latest updates, opportunities, and impact stories.</p>
           <form class="newsletter-form" action="#" method="POST">
             <input type="email" placeholder="Enter your email" required />
             <button type="submit">Subscribe</button>
-          </form>
+          </form> -->
+          <!-- <div class="ml-embedded" data-form="i2moVa"></div> -->
+          <div class="ml-embedded" data-form="IWIPxv"></div>
         </div>
       </div>
 
@@ -256,33 +282,6 @@
         <p>&copy; 2025 Young Leaders Network. All rights reserved.</p>
       </div>
     </footer>
-
-    <script>
-      function makePayment(amount, title) {
-        FlutterwaveCheckout({
-          public_key: "FLWPUBK_TEST-abd39f71197dbab11ce2e23230ab8e18-X",
-          tx_ref: "txn-" + Date.now(),
-          amount: amount,
-          currency: "NGN",
-          payment_options: "card, mobilemoneyghana, ussd",
-          redirect_url: "https://sandbox.flutterwave.com/donate/uwzuvlraqeza",
-          meta: {
-            consumer_id: 23,
-            consumer_mac: "92a3-912ba-1192a",
-          },
-          customer: {
-            email: "donor@example.com", // replace dynamically or with a form
-            phone_number: "08100000000",
-            name: "Anonymous Donor",
-          },
-          customizations: {
-            title: title,
-            description: "Donate for a cause",
-            logo: "https://www.logolynx.com/images/logolynx/22/2239ca38f5505fbfce7e55bbc0604386.jpeg",
-          },
-        });
-      }
-    </script>
 
     <script src="/index.js"></script>
   </body>
